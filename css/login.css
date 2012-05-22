@@ -1,0 +1,204 @@
+.nsh-header-login {
+    background: url("../images/login/header_new_bg.png") no-repeat scroll center center transparent;
+}
+
+.nsh-header-top-login {
+	height: 110px;
+}
+.nsh-login {
+	padding-top: 30px;
+    overflow: hidden;
+    padding-bottom: 100px;
+    clear: both;
+    position: relative;	
+}
+.nsh-login-signupbox {
+	width: 990px;
+}
+.nsh-login-bluebox {
+	#background-color: #3B5998;
+    border-radius: 15px;
+    color: #ffffff;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    padding: 20px;
+	min-height: 416px;
+}
+.nsh-login-leftcontent {
+	clear: right;
+    color: #FFFFFF;
+    float: left;
+    font-size: 12px;
+    margin-right: 15px;
+    text-align: left;
+    width: 639px;
+	height: 416px;
+	background: url("../images/login/login_left.png") no-repeat scroll center center transparent;	
+}
+.nsh-login-info {
+	margin-left: 8px;
+}
+.nsh-loginlist{
+	margin-top: 5px;
+}
+.nsh-login-buttonblue {
+	background-color: #FFFFFF;
+    border-radius: 5px;
+    clear: right;
+    color: #818181;
+    float: center;
+    font-size: 15px;
+    margin-top: 418px;
+	width: 600px;
+    text-align: center;	
+	margin-left: 200px;
+}
+.nsh-rightbox {
+	background-color: #3B5998;	
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    text-align: center;
+	width: 300px;
+	float: right;
+	height: 280px;
+}
+.nsh-rightheaderext {
+    font-family: NewsCycle,Arial Narrow,Arial,sans-serif;
+    font-size: 18px;
+}
+.nsh-loginformfield {
+    color: #ffffff;
+    margin-top: 10px;
+}
+.nsh-login-textbox {   
+	border: 0 none;
+    color: #999999;
+    padding-bottom: 6px;
+    padding-left: 5px;
+    padding-top: 6px;
+    width: 250px;
+}
+.nsh-login-signupbutton {
+    width: 256px;
+	margin-left: 65px;
+}
+.nsh-login-button, .nsh-login-forgotpassword {
+	background-color: #267BB6;
+    border-radius: 5px;
+    clear: right;
+    color: #FFFFFF;
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 15px;
+    min-width: 63px;
+    padding: 6px 10px;
+    text-align: center;
+	margin-right: 30px;
+}
+.nsh-login-button:hover, .nsh-login-forgotpassword:hover {
+    background-color:  #CFDEFF;
+    cursor: pointer;
+	 color: #267BB6;
+}
+.nsh-login-buttonblue:hover {
+    #background-color: #A1A1A1;
+    cursor: pointer;
+}
+.nsh-login-footer-logo {
+    border-color: #CECECE -moz-use-text-color;
+    border-style: dotted none;
+    border-width: 2px medium;
+    height: 92px;
+    width: 960px;
+	margin: 16px auto 30px;
+}
+.check-box {
+	width: 10px;
+}
+
+.check-box-div {
+	width: 260px;
+}
+
+.select-box-div {
+	width: 260px;
+}
+
+.nsh-login-signupbutton-span {
+	#float: left;
+	#margin: 20px;
+	font-size: 13px;
+}
+
+.nsh-login-bottom {
+	background: url("../images/login/login_bottom.png") no-repeat scroll center center transparent;
+    float: right;
+    margin-top: 10px;
+    width: 320px;
+	height: 100px;
+}
+
+.nsh-login-bottom-account {
+	color: #818181;
+	font-size: 18px;
+}
+
+.nsh-login-bottom-sign  {
+	color: #3B5998;
+	font-size: 17px;	
+}
+
+.check-box-secure {
+	width: 10px;
+	#float: left;
+	margin-left: 22px;
+}
+
+.nsh-header-client-login {
+	background: url("../images/login/client_logo_img.png") no-repeat 20% 25%;
+}
+
+.nsh-all-client {
+	background: url("../images/login/bg_client.jpg") no-repeat scroll center center transparent;
+}
+
+.nsh-login-footer-logo-client {
+    border-width: 2px medium;
+    height: 92px;
+    margin: 16px auto 30px;
+    width: 960px;
+}
+
+.nsh-login-leftcontent-client {
+    clear: right;
+    color: #FFFFFF;
+    float: left;
+    font-size: 12px;
+    height: 416px;
+    margin-right: 15px;
+    text-align: left;
+    width: 639px;	
+}
+
+.nsh-login-bottom-sign-client {
+	color: #0000EE;
+	font-size: 15px;
+}
+
+.nsh-login-bottom-sign-client:hover {
+	text-decoration:underline
+}
+
+.nsh-foot-client {
+	background: url("../images/login/client_noosh.png") no-repeat 20% 25%;
+	min-height: 40px;
+}
+
+.nsh-login-button-client {
+	margin-right: 30px;
+}
+
+

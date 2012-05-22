@@ -1,0 +1,457 @@
+
+/******* Framework *******/
+body{
+	/*font-family: Arial,Helvetica,sans-serif;*/
+	/*font-family: Arial,Helvetica,Verdana,sans-serif;*/
+	font-family: 'VAG Rounded W01 Light',sans-serif;
+	font-size: 12px;	
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.nsh-head {
+	width: 100%;
+	background: #267BB6;
+	position: relative;
+}
+
+.head-top {
+	height: 55px;
+}
+
+.head-top-center{
+	margin: auto;
+	width:	960px;
+}
+
+.head-top-center-user{
+	float:right;
+	width: 95px;
+	margin-top: 5px;
+}
+.head-menu {
+	background: #F8F8F8;
+	border-bottom-color: #BCC8D1;
+	position: relative;
+}
+
+.head-menu-center{
+	position: relative;
+	margin: auto;
+	width: 960px;
+	font-weight: bold;
+}
+
+.head-menu-center-new-job{
+	float: left;
+	margin-left: 40px;
+}
+
+.head-menu-center-new-job div{
+	float: left;
+	margin-left: 5px;
+}
+
+.head-menu-center-search{
+	float: right;
+}
+
+.nsh-body {
+	width: 960px;
+	margin: auto;
+	min-height: 400px;	
+}
+
+.body-main{
+	float: left;
+	width: 680px;
+	padding: 10px;	
+}
+
+.body-right{
+	float: left;
+	width: 230px;
+	margin-left: 5px;
+	padding-left: 10px;
+	border-left: 1px solid #E8E8E8;
+}
+
+.nsh-foot{
+    background: #F2EFEF;
+    border-top: 1px solid #dfdcdc;
+    padding-top: 10px;
+    width: 100%;
+min-height: 40px;
+}
+ 
+.foot-center-ul {
+padding: 13px;
+margin-bottom: 2px;
+    margin-top: 2px;
+margin-top: 0 !important;
+}
+ 
+.foot-center-ul li{
+float:left;
+list-style:none;
+margin-right: 15px;
+font-size: 11px;
+}
+ 
+.foot-center a {
+    outline: medium none;
+    text-decoration: none;
+color: #666666;
+width: 20px;
+margin: auto;
+}
+ 
+.foot-center.foot-center-ul li:after {
+font-weight: bold;
+    padding: 0 5px;
+}
+ 
+.foot-center-ul > li:after {
+    content: ".";
+    padding: 0 3px;
+display: inline-block
+}
+
+.foot-center{
+width: 960px;
+margin: auto;
+}
+ 
+.foot-center-logo {
+width: 20px;
+margin: auto;
+color: #666666 !important;
+}
+ 
+.foot-center-text{
+float: right;
+    text-align: right;
+    width: 340px;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important; 
+ font-size: 11px;
+color: #666666 !important;
+}
+
+.body-right-section{
+	margin-top: 10px;
+	margin-bottom: 30px;
+	color: #666666;
+}
+
+.body-right-section-title{
+	border-bottom: 1px solid #E8E8E8;
+	padding-bottom: 5px;
+}
+.body-right-section-content ul li{
+	list-style: none;
+}
+
+
+/**  Head Menu Center Search**/
+.head-menu-center-search{
+        width:228px;
+        float:right;
+        border:1px solid #267BB6;
+        margin-top:1px;
+	margin-right:12px;
+        padding:1px;
+        border-radius: 5px 5px 5px 5px;
+}
+
+
+.head-menu-center-search-field{
+        border:none;
+        margin-left:5px;
+        margin-right:5px;
+        width:195px;
+        background:#EFF5F9;
+	color: grey;
+}
+
+.head-menu-center-search img{
+height:15px;
+padding-top:3px;
+padding-left: 2px;
+}
+
+
+.head-menu-center-search-delete{
+
+        float:right;
+        width:16px;
+        margin-right:15px;
+        padding:0 10px 0 10px;
+        background: #fff;
+        border: 1px solid #105F95;
+        border-left:none;
+        border-radius: 0 5px 5px 0 ;
+
+
+}
+
+#x:hover {
+        color:#36c;
+        cursor: pointer;
+
+}
+/**  Head Menu Center Search**/
+/******* Framework *******/
+
+/******* Common *******/
+.close-section{
+	border: 1px solid grey;
+	padding: 0;
+	margin-bottom: 2px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.com-model{
+	display: none;
+	position: relative;	
+}
+
+.com-model-step-progress{
+	display: none;
+	margin: 10px;
+}
+
+.com-model-step{
+	display: none;
+}
+
+.com-button-menu{
+	height: 22px;
+	padding: 8px 8px 0 8px;
+	border-radius: 5px;
+	color: #1133AA;
+	background: #CFDEFF;
+	vertical-align: middle;
+	cursor: pointer;
+}	
+
+li.menu-sf-actions{
+	margin-left: 50px;
+}
+
+a.job-quote-link{
+	font-weight: bold;
+	color: #1133AA;
+	cursor: pointer;
+}
+/******* Common *******/
+
+/******* Clearfix *******/
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.clearfix { /* help for IE 6/7, adds padding */
+    *display: inline-block;
+    *zoom: 1;
+    *overflow:hidden;
+}
+/******* Clearfix *******/
+
+
+/******* Home *******/
+.home-close-icon{
+	cursor: pointer;
+}
+
+.home-section{
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	width:	95%;
+}
+.home-section-title{
+	/*font-weight: bold;*/
+	font-size: larger;
+	/*border-bottom: 1px solid grey;*/
+	margin-bottom: 2px;
+}
+.home-section-content{
+	position: relative;
+	border-radius: 8px;
+	border: 1px solid grey;
+	background: #EFF5F9;
+}
+.home-section-content li{
+	list-style: none;
+}
+
+.home-section-content-ul{
+	padding: 0;
+	margin: 0;
+}
+
+.home-section-content-ul li{
+	list-style:none;
+/*	padding: 10px 20px 5px 20px;*/
+	display: inline-block;
+	
+}
+
+.home-section-content-ul li a div{
+	margin: 10px 20px 5px 20px;
+	border:1px solid grey;
+	cursor:pointer;
+	width:50px;
+	padding:5px;
+	text-align:center;
+}
+
+.home-section-content-ul li a div:hover{
+	margin: 8px 8px 3px 8px;
+	border:3px solid grey;
+	width: 70px;	
+}
+
+.home-section-content-ul li a div img:hover{
+}
+
+/******* Home *******/
+
+/******* Jobs *******/
+.job-tab-view{
+}
+
+.job-filter{
+	margin: 10px;
+}
+
+.job-view-type{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/******* Jobs *******/
+
+/******* Job *******/
+.job-title{
+	font-size: 16px;
+	font-weight: bold;
+}
+/******* Job *******/
+
+/******* superfish *******/
+.menu-item-normal{
+	background: url("images/normal.png");
+}
+
+.menu-item-hover{
+	background: url("images/hover.png");
+}
+
+/******* superfish *******/
+
+/******* my menu *******/
+ul.menu-ul{
+	margin: 0;
+	padding: 0;
+	height: 36px;
+	width: 650px;
+	float: left;
+}
+
+ul.menu-ul a{
+	font-size: 13px;
+	font-weight: normal;
+	color: #666666;
+}
+
+li.menu-first{
+	display: inline-block;
+	list-style: none;
+	float: left;
+	background: url("../images/normal-small.png");
+	padding: 10px 12px 10px 12px;
+	min-width: 60px;
+	padding-left: 20px;
+	margin-left: -10px;
+}
+
+li.menu-first:hover{
+	background: url("../images/hover-small.png");
+}
+
+
+ul.menu-ul-second{
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 1001;
+}
+
+ul.menu-ul-second li{
+	display: inline-block;
+	padding: 5px 10px 5px 20px;
+	background: #f8f8f8;
+	width: 140px;
+}	
+
+ul.menu-ul-second li:hover{
+	background: #efd8ff;/*#eff5f9;*/
+	cursor: pointer;
+}
+
+
+
+/******* my menu *******/
+
+
+/******* create job *******/
+ 
+.createJob-fieldset .createJob-fieldset-preview{
+position: relative;
+width: 600px;
+border:none;
+margin-left:3px;
+}
+ 
+ 
+.createJob-fieldset-dl  dt{
+    color: #666666;
+    float: left;
+    font-weight: bold;
+    text-align: left;
+    width: 200px;
+                padding-right:10px;
+}
+ 
+.createJob-fieldset-preview-dl  dt{
+    color: #666666;
+    float: left;
+    font-weight: bold;
+    text-align: left;
+    width: 200px;
+                padding-right:10px;
+}
+ 
+ 
+.createJob-fieldset-preview-dl dd input{
+                border:none;
+                font-weight:bold;
+                font-size:10px;
+}
+ 
+/******* create job *******/

@@ -1,0 +1,311 @@
+
+/******* Framework *******/
+body{
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 12px;	
+}
+
+a{
+	text-decoration: none;
+}
+
+.nsh-head {
+	width: 100%;
+	background: #267BB6;
+	position: relative;
+}
+
+.head-top {
+	height: 50px;
+}
+
+.head-top-center{
+	margin: auto;
+	width:	960px;
+}
+
+.head-menu {
+	background: #EFF5F9;
+	border-bottom-color: #BCC8D1;
+	position: relative;
+}
+
+.head-menu-center{
+	position: relative;
+	margin: auto;
+	width: 960px;
+	font-weight: bold;
+}
+
+.head-menu-center-new-job{
+	float: left;
+	margin-left: 40px;
+}
+
+.head-menu-center-new-job div{
+	float: left;
+	margin-left: 5px;
+}
+
+.head-menu-center-search{
+	float: right;
+}
+
+.nsh-body {
+	width: 960px;
+	margin: auto;
+	min-height: 400px;	
+}
+
+.body-main{
+	float: left;
+	width: 680px;
+	padding: 10px;	
+}
+
+.body-right{
+	float: left;
+	width: 230px;
+	margin-left: 5px;
+	padding: 10px;
+	border-left: 1px solid #E8E8E8;
+}
+
+.nsh-foot{
+    background: #F2EFEF;
+    border-top: 1px solid #dfdcdc;
+    padding-top: 10px;
+    width: 100%;
+min-height: 40px;
+}
+ 
+.foot-center-ul {
+padding: 13px;
+margin-bottom: 2px;
+    margin-top: 2px;
+margin-top: 0 !important;
+}
+ 
+.foot-center-ul li{
+float:left;
+list-style:none;
+margin-right: 15px;
+font-size: 11px;
+}
+ 
+.foot-center a {
+    outline: medium none;
+    text-decoration: none;
+color: #666666;
+width: 20px;
+margin: auto;
+}
+ 
+.foot-center.foot-center-ul li:after {
+font-weight: bold;
+    padding: 0 5px;
+}
+ 
+.foot-center-ul > li:after {
+    content: ".";
+    padding: 0 3px;
+display: inline-block
+}
+
+.foot-center{
+width: 960px;
+margin: auto;
+}
+ 
+.foot-center-logo {
+width: 20px;
+margin: auto;
+color: #666666 !important;
+}
+ 
+.foot-center-text{
+float: right;
+    text-align: right;
+    width: 340px;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important; 
+ font-size: 11px;
+color: #666666 !important;
+}
+
+.body-right-section{
+	margin-top: 10px;
+	margin-bottom: 30px;
+	color: #666666;
+}
+
+.body-right-section-title{
+	border-bottom: 1px solid #E8E8E8;
+	padding-bottom: 5px;
+}
+.body-right-section-content ul li{
+	list-style: none;
+}
+
+/** head-top-center-user- **/
+.head-top-center-user-infor{
+    float: right;
+    display: block;
+        width:450px;
+        height:auto;
+}
+
+.img{
+        float: left;
+    margin-right: 10px;
+}
+
+.head-top-center-user-pic{
+        margin-bottom: 1px;
+    margin-top: 10px;
+}
+
+
+.head-top-center-user-right{
+  float:left
+  display: block;
+  padding-bottom: 1px;
+  padding-top: 3px;
+  font-weight: bold;
+}
+
+
+.head-top-center-user-right a:hover, .head-top-center-user-pic:hover{
+        cursor: pointer;
+}
+/** head-top-center-user- **/
+
+/**  Head Menu Center Search**/
+.head-menu-center-search{
+        width:250px;
+        float:right;
+        border:1px solid #267BB6;
+        margin-bottom:2px;
+        padding:2px;
+        border-radius: 5px 5px 5px 5px;
+}
+
+
+.head-menu-center-search-field{
+        border:none;
+        margin-left:5px;
+        margin-right:5px;
+        width:200px;
+        background:#EFF5F9;
+
+}
+
+.head-menu-center-search img{
+height:15px;
+padding-top:3px;
+padding-left: 2px;
+}
+
+
+.head-menu-center-search-delete{
+
+        float:right;
+        width:16px;
+        margin-right:15px;
+        padding:0 10px 0 10px;
+        background: #fff;
+        border: 1px solid #105F95;
+        border-left:none;
+        border-radius: 0 5px 5px 0 ;
+
+
+}
+
+#x:hover {
+        color:#36c;
+        cursor: pointer;
+
+}
+/**  Head Menu Center Search**/
+/******* Framework *******/
+
+/******* Common *******/
+.com-model{
+	display: none;
+	position: relative;	
+}
+
+.com-model-step{
+	display: none;
+}
+
+.com-button-menu{
+	height: 22px;
+	padding: 8px 8px 0 8px;
+	border-radius: 5px;
+	color: #1133AA;
+	background: #CFDEFF;
+	vertical-align: middle;
+	cursor: pointer;
+}	
+
+li.menu-sf-actions{
+	margin-left: 50px;
+}
+/******* Common *******/
+
+/******* Clearfix *******/
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.clearfix { /* help for IE 6/7, adds padding */
+    *display: inline-block;
+    *zoom: 1;
+    *overflow:hidden;
+}
+/******* Clearfix *******/
+
+
+/******* Home *******/
+.home-section{
+	margin-top: 20px;
+	margin-bottom: 30px;
+	width:	80%;
+}
+.home-section-title{
+	/*font-weight: bold;*/
+	font-size: larger;
+	border-bottom: 1px solid grey;
+}
+.home-section-content li{
+	list-style: none;
+}
+/******* Home *******/
+
+/******* Jobs *******/
+.job-tab-view{
+}
+
+.job-filter{
+	margin: 10px;
+}
+
+.job-view-type{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/******* Jobs *******/
+
+/******* Job *******/
+.job-title{
+	font-size: 16px;
+	font-weight: bold;
+}
+/******* Job *******/
