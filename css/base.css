@@ -455,3 +455,17 @@ margin-left:3px;
 }
  
 /******* create job *******/
+
+/******* others *******/
+table.product-list{
+	border-collapse: collapse;
+}
+table.product-list th{
+	color: white;
+	background: #9900ff;
+}
+table.product-list th,td{
+	padding: 5px;
+	border: 1px solid grey;
+}
+/******* others *******/

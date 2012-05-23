@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<!--<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />-->
+	<link rel="stylesheet" type="text/css" href="css/ui171/ui.all.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/superfish.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/base.css" media="screen">
+</head>
+<body>
+
+<div id="myContent" style="position:relative;">
+
+			<div id="dashboardPanels" style="position:relative;">
+                                <div class="home-section">
+                                        <div class="home-section-title">
+						<div class="clearfix">
+						<img style="float:left;" class="home-min-icon" src="images/bullet_arrow_down.png">
+						<img style="float:left;display:none;" class="home-max-icon" src="images/bullet_arrow_right.png">
+						<span style="float:left;">Tasks</span>
+						</div>
+                                        </div>
+                                        <div class="home-section-content">
+                                                <ul>
+                                                        <li>April Postcards: <a class="job-quote-link" href="zprojecta.html">Send Quote</a></li>
+                                                        <li>Valentines Day Poster: <a class="job-quote-link" href="zprojectv.html">Review Estimates</a></li>
+                                                </ul>
+                                        </div>
+                                </div>
+                                <div class="home-section">
+                                        <div class="home-section-title">
+						<div class="clearfix">
+						<img style="float:left;" class="home-min-icon" src="images/bullet_arrow_down.png">
+						<img style="float:left;display:none;" class="home-max-icon" src="images/bullet_arrow_right.png">
+						<span style="float:left;">Recent Projects</span>
+						</div>
+                                        </div>
+                                        <div class="home-section-content" style="padding:10px;">
+						<div style="margin-bottom: 20px;cursor:pointer;">
+							<a style="text-decoration:underline;" href="zprojects.html">All Projects</a>
+						</div>
+                                                <ul style="margin:0;padding:0;">
+							<li style="margin-bottom:10px;border-radius:10px;background:#cfdeff;padding:8px;">
+								<div class="home-recent-jobs-job-title clearfix">
+									<span style="float:left;font-weight:bold;"><a href="jobv.html">Valentines Day Poster</a></span>
+									<span style="float:right;">In Pricing</span>
+								</div>
+								<div id="jobvDetails" style="display:none;margin-top:10px;">
+									<ul>
+										<li>1</li>
+										<li>2</li>
+									</ul>
+								</div>
+							</li>
+                                                        <li style="margin-bottom:10px;border-radius:10px;background:#cfdeff;padding:8px;">
+                                                                <div class="home-recent-jobs-job-title clearfix">
+                                                                        <span style="float:left;font-weight:bold;"><a href="joba.html">April Poster</a></span>
+                                                                        <span style="float:right;">Estimates Received: <a class="job-quote-link" href="zprojecta.html">Review Estimates</a></span>
+                                                                </div>
+                                                                <div id="jobaDetails" style="display:none;margin-top:10px;">
+                                                                        <ul>
+										<li>3</li>
+										<li>4</li>
+									</ul>
+                                                                </div>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                </div>
+			</div>
+</div>
+
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/superfish.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			//reset the page by reading the template
+			var content = $("#myContent").html();
+			$("#myContent").load("ztemplate.html", function(){
+			$("#contentInTemplate").html(content);
+			$("#jsContent").load("ztemplateJs.html");
+
+			//
+			//$("#dashboardPanels").tabs();
+
+			//the recent job tab
+			//$("#jobvDetails").tabs();
+			//$("#jobaDetails").tabs();
+			$(".home-recent-jobs-job-title").click(function(e){
+				var jobTitle = $(this);
+
+				jobTitle.next().toggle();
+			});
+
+			});
+		});
+	</script>	
+</body>
+</html>

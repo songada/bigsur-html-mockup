@@ -1,0 +1,231 @@
+<script>
+	//$("#mainMenu").superfish();
+	
+	//create a new product
+	$(".create-new-product").click(function(){
+			console.log("click");
+			$("#modelNewProduct").dialog("destroy").dialog({
+				title: "New Product",
+				bgiframe: false,
+				autoOpen: true,
+				height: 430,
+				width: 700,
+				modal: true,
+				buttons: {
+					"Save" : function(){
+						$("#modelNewProduct").dialog("destroy");
+					},
+					"Cancel" : function(){
+						$("#modelNewProduct").dialog("destroy");
+					}
+				},
+				close: function(){
+					$(this).dialog("destroy");
+				}
+			});	
+	});
+	
+	//customize the first page
+	$("#customizeFirstPage").click(function(e){
+		$("#modelFirstPage").dialog("destroy").dialog({
+			title: "Customize The First Job Page",
+			bgiframe: false,
+			autoOpen: true,
+			height: 430,
+			width: 700,
+			modal: true,
+			buttons: {
+				"Save" : function(){
+					$("#modelFirstPage").dialog("destroy");
+				},
+				"Cancel" : function(){
+					$("#modelFirstPage").dialog("destroy");
+				}
+			},
+			close: function(){
+				$(this).dialog("destroy");
+			}
+		});	
+	});
+	
+	//key stroks in site name triggers site id change in the create site model window
+	$("#createSiteName").keyup(function(e){
+		var 	siteName 	= $(this).val(),
+			siteNameLength 	= siteName.length,
+			siteId		= "",
+			keyCode, i;
+		for(i = 0; i < siteNameLength; i++){
+			keyCode = siteName.charCodeAt(i);
+			console.log(keyCode);
+			if((keyCode >= 48 && keyCode <= 57)	//0 - 9
+			|| (keyCode >= 65 && keyCode <= 90)	//A - Z
+			|| (keyCode >= 97 && keyCode <= 122)){	//a - z
+				siteId += siteName.charAt(i).toLowerCase();
+			}
+		}
+		$("#siteIdInUrl").html(siteId);		
+	});
+	$("#createSiteName2").keyup(function(e){
+		var 	siteName 	= $(this).val(),
+			siteNameLength 	= siteName.length,
+			siteId		= "",
+			keyCode, i;
+		for(i = 0; i < siteNameLength; i++){
+			keyCode = siteName.charCodeAt(i);
+			console.log(keyCode);
+			if((keyCode >= 48 && keyCode <= 57)	//0 - 9
+			|| (keyCode >= 65 && keyCode <= 90)	//A - Z
+			|| (keyCode >= 97 && keyCode <= 122)){	//a - z
+				siteId += siteName.charAt(i).toLowerCase();
+			}
+		}
+		$("#siteIdInUrl2").html(siteId);		
+	});
+	
+	//create site button click
+	$(".create-site-button").click(function(e){
+		e.stopPropagation(); //prevent the page from refreshing
+		
+		$("#modelSite").dialog("destroy").dialog({
+			title: "Create Site",
+			bgiframe: false,
+			autoOpen: true,
+			height: 430,
+			width: 700,
+			modal: true,
+			buttons: {
+				"Create" : function(){
+					location.href = "zsiten.html";
+				},
+				"Cancel" : function(){
+					$("#modelSite").dialog("destroy");
+				}
+			},
+			close: function(){
+				$(this).dialog("destroy");
+			}
+		});
+	});
+	
+			$("#searchCategories").tabs();
+			$("#nooshSearch").focusin(function(e){
+				$(this).val("");
+			}).focusout(function(e){
+				$(this).val("Global Search");
+			});
+			//.keydown(function(e){
+			//	if(e.keyCode == 13){
+			//		$("#advancedSearch").show();
+			//	};
+			//});
+			$("#nooshSearch").next("span").click(function(e){
+				$("#advancedSearch").toggle();
+			});
+
+                        $(".job-quote-link").click(function(e){
+                                $("#modelQuote").show().dialog("destroy").dialog({
+                                        title: "Review Quote",
+                                        height: 400,
+                                        width: 700,
+                                        modal: true,
+                                        buttons: {},
+                                        close: function(){
+                                                $("#modelQuote").dialog("destroy").hide();
+                                        }});
+                        });
+
+			$(".quote-action-button").click(function(e){
+				$("#modelQuote").dialog("destroy").hide();
+			});
+
+			//menu
+			$(".has-sub-menu").mouseenter(function(e){
+				var subUl = $(this).children("ul"),
+				    myPos = $(this).position(),
+				    myHight = $(this).outerHeight(),
+				    subUlTop = myPos.top + myHight,
+				    subUlLeft = myPos.left;
+
+				$(this).children("ul").css("top", subUlTop).css("left", subUlLeft).show();
+			}).mouseleave(function(e){
+				$(this).children("ul").hide();
+			});
+
+			$(".home-close-icon").click(function(e){
+				$(this).parent().prev().hide();
+				$(this).parent().hide();
+			});
+			$(".home-min-icon").click(function(e){
+				$(this).next().show();
+				$(this).parent().parent().next().hide();
+				$(this).hide();
+			});
+			$(".home-max-icon").click(function(e){
+				$(this).prev().show();
+				$(this).parent().parent().next().show();
+				$(this).hide();
+			});
+
+                        var currentStep = 0;
+                        $(".one-new-job, .job-image").click(function(e){
+                                var target = $(e.target);
+
+                                console.log(target.attr("img"));
+                                e.stopPropagation(); //prevent the page from refreshing
+                                currentStep = 1;
+                                $("#jobProgress").show().progressbar({value: 30});
+                                $("#createJobStep1").show();
+                                $("#jobImage").html("<img src='images/projects/" + target.attr("img") + ".png'>&nbsp;&nbsp;<strong>" + target.attr("img") + "</strong>");
+                                $("#modelWin").dialog("destroy").dialog({
+                                        title: "Create Job",
+                                        bgiframe: false,
+                                        autoOpen: true,
+                                        height: 430,
+                                        width: 700,
+                                        modal: true,
+                                        buttons: {
+                                                "Next" : function(){
+                                                        $("#createJobStep" + currentStep).hide();
+                                                        if(currentStep == 3){
+                                                                $("#modelWin").dialog("destroy");
+                                                                location.href = "jobn.html";
+                                                        }
+                                                        if(currentStep == 2){
+                                                                $("#jobProgress").progressbar({value: 100});
+                                                                currentStep++;
+                                                                $("#createJobStep" + currentStep).show();
+                                                        }
+                                                        if(currentStep == 1){
+                                                                $("#jobProgress").progressbar({value: 60});
+                                                                currentStep++;
+                                                                $("#createJobStep" + currentStep).show();
+                                                        }
+                                                },
+					 	"<<Prev" : function(){
+                                                        $("#createJobStep" + currentStep).hide();
+                                                        if(currentStep == 1){
+                                                                $("#modelWin").dialog("destroy");
+                                                        }
+                                                        if(currentStep == 2){
+                                                                $("#jobProgress").progressbar({value: 30});
+                                                               currentStep--;
+                                                                $("#createJobStep" + currentStep).show();
+                                                        }
+                                                        if(currentStep == 3){
+                                                                $("#jobProgress").progressbar({value: 60});
+                                                                currentStep--;
+                                                                $("#createJobStep" + currentStep).show();
+                                                        }
+                                                },
+                                                "Cancel" : function(){
+                                                        $("#createJobStep" + currentStep).hide();
+                                                        $("#modelWin").dialog("destroy");
+                                                }
+                                        },
+                                        close: function(){
+                                                $("#createJobStep" + currentStep).hide();
+                                                $(this).dialog("destroy");
+                                        }
+                                });
+                        });
+</script>
